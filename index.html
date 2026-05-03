@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Book Management</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<style>
+    body {
+        background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+        font-family: Arial, sans-serif;
+    }
+
+    .container-box {
+        width: 400px;
+        margin: 80px auto;
+        padding: 30px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    .form-control {
+        margin-bottom: 15px;
+        border-radius: 8px;
+    }
+
+    .btn-custom {
+        width: 48%;
+        border-radius: 8px;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container-box">
+    <h1>Book Management</h1>
+
+    <form action="RegisterServlet" method="post">
+
+        <input type="text" class="form-control" name="bookName" placeholder="Enter Book Name" required>
+
+        <input type="text" class="form-control" name="bookEdition" placeholder="Enter Book Edition" required>
+
+        <input type="text" class="form-control" name="bookPrice" placeholder="Enter Book Price" required>
+
+        <div class="btn-group">
+            <input type="submit" class="btn btn-success btn-custom" value="Register">
+            <input type="reset" class="btn btn-danger btn-custom" value="Cancel">
+        </div>
+        
+        <br>
+       <a href="booklist">BookList</a>
+    </form>
+</div>
+
+</body>
+</html>
